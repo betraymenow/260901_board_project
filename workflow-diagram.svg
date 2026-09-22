@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="910" viewBox="0 0 680 910" role="img" font-family="sans-serif">
+<title>board_project 구축 워크플로우 (8단계)</title>
+<desc>DB 연결, 스키마 설계, 인증 미들웨어, 라우팅과 CRUD, 서버 조립(app.js), 프론트 통신과 상태관리, 화면 구현, 검증 후 배포까지 이어지는 8단계 세로 흐름도. 서버 조립은 라우팅 완료 이후에 옴</desc>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+</defs>
+<rect x="0" y="0" width="680" height="910" fill="#FFFFFF"/>
+
+<g>
+<rect x="140" y="40" width="400" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="340" y="58" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#085041">DB 연결</text>
+<text x="340" y="76" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">mongoose 접속 함수</text>
+</g>
+<line x1="340" y1="96" x2="340" y2="150" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<g>
+<rect x="140" y="150" width="400" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="340" y="168" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#085041">스키마 설계</text>
+<text x="340" y="186" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">Member, Board 모델</text>
+</g>
+<line x1="340" y1="206" x2="340" y2="260" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<g>
+<rect x="140" y="260" width="400" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="340" y="278" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#085041">인증 미들웨어</text>
+<text x="340" y="296" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">JWT 검증 로직</text>
+</g>
+<line x1="340" y1="316" x2="340" y2="370" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<g>
+<rect x="140" y="370" width="400" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="340" y="388" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#085041">라우팅 + CRUD</text>
+<text x="340" y="406" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">회원 → 게시글 라우터</text>
+</g>
+<line x1="340" y1="426" x2="340" y2="480" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<g>
+<rect x="140" y="480" width="400" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="340" y="498" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#085041">서버 조립 (app.js)</text>
+<text x="340" y="516" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">라우터·미들웨어 연결</text>
+</g>
+<line x1="340" y1="536" x2="340" y2="590" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<g>
+<rect x="140" y="590" width="400" height="56" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text x="340" y="608" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#712B13">프론트 통신 / 상태</text>
+<text x="340" y="626" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#993C1D">api.js, 로그인 상태 관리</text>
+</g>
+<line x1="340" y1="646" x2="340" y2="700" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<g>
+<rect x="140" y="700" width="400" height="56" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text x="340" y="718" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#712B13">화면 구현</text>
+<text x="340" y="736" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#993C1D">목록·작성·상세·수정</text>
+</g>
+<line x1="340" y1="756" x2="340" y2="810" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<g>
+<rect x="140" y="810" width="400" height="56" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="340" y="828" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#2C2C2A">검증 후 배포</text>
+<text x="340" y="846" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#444441">테스트 → Git → GitHub</text>
+</g>
+</svg>
